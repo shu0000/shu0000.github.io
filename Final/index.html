@@ -1,1 +1,78 @@
-<p>hi</p>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RWD</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            list-style: none;
+        }
+        
+        nav {
+            width: 100%;
+            background: rgb(248, 236, 173);
+            height: 80px;
+        }
+        
+        nav ul {
+            float: right;
+            margin-right: 20px;
+        }
+        
+        nav ul li {
+            display: inline-block;
+            line-height: 80px;
+            margin: 0px 30px;
+        }
+        
+        nav ul li a {
+            color: black;
+            font-size: 18px;
+        }
+        
+        label.logo {
+            color: black;
+            font-size: 30px;
+            line-height: 80px;
+            padding: 60px;
+        }
+        
+        a:hover {
+            background: rgb(240, 116, 157);
+        }
+        
+        @media (max-width:500px) {
+            ul {
+                width: 100%;
+                text-align: center;
+            }
+            nav ul li {
+                display: block;
+            }
+        }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+    <nav>
+        <label class="logo">午茶拾光</label>
+        <ul>
+            <li><a href="#">最新消息</a></li>
+            <li><a href="#">飲品</a></li>
+            <li><a href="#">糕點</a></li>
+            <li><a href="#">輕食</a></li>
+            <li><a href="#">聯絡我們</a></li>
+
+        </ul>
+
+    </nav>
+</body>
+
+</html>
