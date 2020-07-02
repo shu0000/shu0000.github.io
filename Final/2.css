@@ -1,0 +1,130 @@
+* {
+    /*消除網頁邊框*/
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+img {
+    vertical-align: bottom;
+}
+
+.item-group {
+    width: 100%;
+    max-width: 1400px;
+    margin: auto;
+}
+
+.title h2 {
+    text-align: center;
+    font-size: 46px;
+}
+
+.title {
+    margin: 0 0px 10px;
+    padding: 20px 10px;
+    background-color: #5a311a;
+    color: #fff;
+    font-family: "微軟正黑體";
+}
+
+.title p {
+    font-size: 16px;
+    text-align: center;
+}
+
+.item {
+    margin: 0 10px 20px;
+}
+
+.item .text h3 {
+    font-size: 24px;
+    text-align: center;
+}
+
+.item .pic img {
+    /*設置全圖片*/
+    width: 100%;
+}
+
+.two {
+    padding: 15px 0 5px;
+    background-color: #ffa;
+}
+
+.two.item {
+    margin: 0;
+}
+
+@media screen and (min-width: 768px) {
+    /*設定桌面及平板顯示*/
+    .item-group {
+        display: flex;
+        /*彈性盒子，又稱flexbox*/
+    }
+    .two .item {
+        display: flex;
+    }
+    .two .item .pic,
+    .two .item .text {
+        width: 50%;
+        margin: 0;
+    }
+    .two .item .text {
+        display: flex;
+        padding: 0 20px;
+        box-sizing: border-box;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+nav {
+    width: 100%;
+    background: rgb(255, 255, 255);
+    height: 80px;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0px 30px;
+}
+
+nav ul li a {
+    color: black;
+    font-size: 18px;
+}
+
+label.logo {
+    color: black;
+    font-size: 30px;
+    line-height: 80px;
+    padding: 60px;
+}
+
+a:hover {
+    background: rgb(189, 117, 69);
+}
+
+@media (max-width:500px) {
+    ul {
+        width: 100%;
+        text-align: center;
+    }
+    nav ul li {
+        display: block;
+    }
+}
